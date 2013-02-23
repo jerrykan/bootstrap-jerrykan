@@ -4,7 +4,7 @@
 <h1>Categories</h1>
 
 <ul>
-{% for category, cat_articles in categories|sort %}
+{% for category, cat_articles in categories %}
   <li><h4><a href="{{ SITEURL }}/{{ category.url }}">{{ category.name }}</a></h4></li>
 {% endfor %}
 </ul>
