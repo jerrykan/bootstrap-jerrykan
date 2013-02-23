@@ -1,0 +1,21 @@
+<ul class="pager">
+  {% if not articles_page.has_next() %}
+    <li class="previous disabled"><a>&larr; Older</a></li>
+  {% else %}
+    <li class="previous">
+      <a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">
+        &larr; Older
+      </a>
+    </li>
+  {% endif %}
+
+  {% if not articles_page.has_previous() %}
+    <li class="next disabled"><a>Newer &rarr;</a></li>
+  {% else %}
+    <li class="next">
+      <a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.previous_page_number()|replace('1', '') }}.html">
+        Newer &rarr;
+      </a>
+    </li>
+  {% endif %}
+</ul>

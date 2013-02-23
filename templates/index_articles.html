@@ -1,0 +1,13 @@
+{% for article in articles_page.object_list %}
+  <div class="article">
+    <h2><a href="{{ SITEURL}}/{{ article.url }}">{{ article.title }}</a></h2>
+
+    {% include "article_header.html" %}
+
+    {{ article.content }}
+
+    {% include "article_footer.html" %}
+  </div>
+{% endfor %}
+
+{% include "article_pagination.html" %}

@@ -1,0 +1,15 @@
+<div class="well well-metadata">
+  {% if article.tags %}
+    <div class="pull-left">
+      <i class="icon-tags"></i>
+      {% for tag in article.tags|sort(attribute='name') %}
+        <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name }}</a>{% if not loop.last %},{% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <div class="pull-right">
+    <i class="icon-user"></i>
+    {{ article.author.name }}
+  </div>
+</div>

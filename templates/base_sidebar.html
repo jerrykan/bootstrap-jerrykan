@@ -1,0 +1,47 @@
+<li class="nav-header">Site</li>
+<li><a href="{{ SITEURL }}">Home</a></li>
+<li><a href="{{ SITEURL }}/archives.html">Archives</a></li>
+
+<li class="nav-header">Categories</li>
+{% for category, articles in categories %}
+  <li><a href="{{ SITEURL }}/{{ category.url }}">{{ category.name }}</a></li>
+{% endfor %}
+
+{% if LINKS %}
+  <li class="divider"></li>
+
+  <li class="nav-header">Links</li>
+  {% for title, url in LINKS %}
+    <li><a href="{{ url }}">{{ title }}</a></li>
+  {% endfor %}
+{% endif %}
+
+{% if SOCIAL or FEED_ALL_ATOM or FEED_ALL_RSS %}
+  <li class="divider"></li>
+
+  <li class="nav-header">Social</li>
+  {% for title, url in SOCIAL %}
+    <li class="social"><a href="{{ url }}">{{ title }}</a></li>
+  {% endfor %}
+
+  {% if FEED_ALL_ATOM %}
+    <li class="social"><a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}">Atom Feed</a></li>
+  {% endif %}
+
+  {% if FEED_ALL_RSS %}
+    <li class="social"><a href="{{ SITEURL }}/{{ FEED_ALL_RSS }}">RSS Feed</a></li>
+  {% endif %}
+{% endif %}
+
+{% if tag_cloud %}
+  <li class="divider"></li>
+
+  <li class="nav-header">Tag Cloud</li>
+  <ul class="inline">
+  {% for tag, size in tag_cloud %}
+    <li class="tag-size{{ size }}">
+      <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+{% endif %}

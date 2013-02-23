@@ -1,0 +1,57 @@
+/* Base */
+.page-header-no-border {
+    border-bottom: none;
+}
+
+
+/* Archive */
+dd.article {
+    padding-bottom: 5px;
+}
+
+
+/* Article */
+.article {
+    padding-bottom: 15px;
+}
+
+.well-metadata {
+    border-radius: 3px 3px 3px 3px;
+    padding: 5px 9px;
+}
+
+
+/* Sidebar */
+li.tag-size1 { font-size: large; }
+li.tag-size2 { font-size: medium; }
+li.tag-size3 { font-size: x-small; }
+li.tag-size4 { font-size: xx-small; }
+
+.social a:before {
+    margin-right: 6px;
+    vertical-align: middle;
+}
+.social a:before {
+    content: url('../img/icons/none.png');
+}
+.social a[href*='all.atom.xml']:before {
+    content: url('../img/icons/feed.png');
+}
+.social a[href*='bitbucket.org']:before {
+    content: url('../img/icons/bitbucket.png');
+}
+.social a[href*='github.com']:before {
+    content: url('../img/icons/github.png');
+}
+.social a[href*='gitorious.org']:before {
+    content: url('../img/icons/gitorious.png');
+}
+.social a[href*='linkedin.com']:before {
+    content: url('../img/icons/linkedin.png');
+}
+.social a[href*='stackoverflow.com']:before {
+    content: url('../img/icons/stackoverflow.png');
+}
+.social a[href*='twitter.com']:before {
+    content: url('../img/icons/twitter.png');
+}
