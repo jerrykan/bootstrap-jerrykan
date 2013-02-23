@@ -9,6 +9,11 @@ dd.article {
     padding-bottom: 5px;
 }
 
+.highlight pre {
+    color: #93A1A1;
+    background-color: #073642;
+}
+
 
 /* Article */
 .article {
