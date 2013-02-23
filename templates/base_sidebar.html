@@ -1,5 +1,10 @@
 <li class="nav-header">Site</li>
 <li><a href="{{ SITEURL }}">Home</a></li>
+{% if DISPLAY_PAGES_ON_MENU %}
+  {% for page in pages %}
+    <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+  {% endfor %}
+{% endif %}
 <li><a href="{{ SITEURL }}/archives.html">Archives</a></li>
 
 <li class="nav-header">Categories</li>
