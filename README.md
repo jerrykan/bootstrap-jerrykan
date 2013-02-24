@@ -7,6 +7,11 @@ Licensed under the GNU GPL v3
 Copyright (c) 2013 John Kristensen (unless explicitly stated otherwise).
 
 
+Screenshot
+----------
+![Screenshot](screenshot.png)
+
+
 Code
 ----
 The original version of the theme is available from
