@@ -20,6 +20,10 @@ dd.article {
     padding-bottom: 15px;
 }
 
+.article p {
+    text-align: justify;
+}
+
 .well-metadata {
     border-radius: 3px 3px 3px 3px;
     padding: 5px 9px;
