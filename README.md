@@ -12,6 +12,18 @@ Screenshot
 ![Screenshot](screenshot.png)
 
 
+Notes
+-----
+### Syntax Highlighting
+Code blocks generated from reStructuredText use the `highlight` CSS class for
+syntax highlighting, but by default code blocks generated from Markdown use the
+`codehilight` class. This theme assumes the `highlight` class is being used for
+syntax highlighting, so if you are generating content from Markdown, you will
+need to include the following setting in your `pelicanconf.py` file:
+
+    MD_EXTENSIONS = ['codehilite(css_class=highlight)']
+
+
 Code
 ----
 The original version of the theme is available from
