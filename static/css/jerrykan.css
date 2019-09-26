@@ -72,6 +72,9 @@ li.tag-size4 { font-size: xx-small; }
 .social a[href*='github.com']:before {
     content: url('../img/icons/github.png');
 }
+.social a[href*='gitlab.com']:before {
+    content: url('../img/icons/gitlab.png');
+}
 .social a[href*='gitorious.org']:before {
     content: url('../img/icons/gitorious.png');
 }
